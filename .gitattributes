@@ -1,0 +1,2 @@
+resources/taxdump/names.dmp filter=lfs diff=lfs merge=lfs -text
+resources/taxdump/nodes.dmp filter=lfs diff=lfs merge=lfs -text

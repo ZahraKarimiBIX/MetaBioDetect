@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Blast</class>
+ <widget class="QMainWindow" name="Blast">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Blast - Online</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout_3">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_logo_blast">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../resources/blast-150.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_ProgressBar">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Retrieve data from Blast:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QProgressBar" name="progressBar">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QProgressBar {
+    border: 2px solid #555;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+QProgressBar::chunk {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                                      stop: 0 #4CAF50, stop: 1 #8BC34A);
+    border-radius: 8px;
+    margin: 1px;
+}</string>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="invertedAppearance">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,1,0,1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="pushButton_setDefult">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D7; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #005A9E; 
+}
+
+QPushButton:pressed {
+    background-color: #003764; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Set Default</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="pushButton_run">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>1</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #0078D7; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 20px; 
+}
+
+QPushButton:hover {
+    background-color: #005A9E; 
+}
+
+QPushButton:pressed {
+    background-color: #003764; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Blast</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>7</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_SampleName">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Sample Name: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_sample_name"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_database">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Database: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="comboBox_database">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>Core nucleotide database (core_nt)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RefSeq Select RNA sequences (refseq_select)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Reference RNA sequences (refseq_rna)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RefSeq Reference genomes (refseq_reference_genomes)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RefSeq Genome Database (refseq_genomes)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Nucleotide collection (nr/nt)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Whole-genome shotgun contigs (wgs)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Expressed sequence tags (est)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sequence Read Archive (SRA)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Transcriptome Shotgun Assembly (TSA)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Targeted Loci (TLS)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>High throughput genomic sequences (HTGS)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Patent sequences (pat)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PDB nucleotide database (pdb)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Human RefSeqGene sequences (RefSeq_Gene)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Genomic survey sequences (gss)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sequence tagged sites (dbsts)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_Organism">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Organism (optional):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_Organism"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_blastType">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Optimize for: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="comboBox_blastType">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>Highly similar sequences (megablast)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>More dissimilar sequences (discontiguous megablast)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Somewhat similar sequences (blastn)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_API_key">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>API Key (optional):</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit_api_key"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_loadFile">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Sequence File Path: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_loadFile">
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Max Target Seqs:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_max_target_seq">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Percentage Identity:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEdit_Percentage_identity"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>685</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

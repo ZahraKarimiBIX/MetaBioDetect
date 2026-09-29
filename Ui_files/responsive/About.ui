@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QMainWindow" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>508</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>About MetaBioDetect</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>501</width>
+         <height>281</height>
+        </rect>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:9.6pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;MetaBioDetect&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;MetaBioDetect is an open-source graphical software designed for DNA metabarcoding analysis and amplicon sequencing data processing. The platform integrates widely used bioinformatics tools including &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;VSEARCH&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Cutadapt&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;, and &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;BLAST&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; into an intuitive graphical user interface (GUI), allowing researchers to perform complex metabarcoding analyses without requiring advanced command-line expertise.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;The software provides a complete workflow for sequence preprocessing, clustering, and taxonomy assignment. Users can perform adapter and primer trimming, read merging, quality filtering, dereplication, clustering into &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;ASVs or OTUs&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;, chimera detection, and taxonomic identification using online BLAST, local databases, or custom reference datasets.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;MetaBioDetect was developed in &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Python&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; using the &lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;PyQt&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt; framework and is designed to run across multiple operating systems. The software aims to make metabarcoding analysis more accessible, reproducible, and efficient for applications in biodiversity monitoring, environmental research, and food authenticity testing.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Developers:&lt;/span&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;&lt;br /&gt;Sajad Falsafi Zadeh&lt;br /&gt;Zahra Karimi&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;MetaBioDetect is open-source software released under the MIT License.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>508</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

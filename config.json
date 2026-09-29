@@ -1,0 +1,5 @@
+{
+    "vsearch": "C:/Users/sajad/Desktop/MetaBioDetect_Sajad/app  s/vsearch/bin/vsearch.exe",
+    "blast": "C:/Users/sajad/Desktop/MetaBioDetect_Sajad/app  s/blast/blastn.exe",
+    "taxdump": "C:\\Users\\sajad\\Desktop\\MetaBioDetect_Sajad\\resources\\taxdump"
+}

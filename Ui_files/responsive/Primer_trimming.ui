@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Primer</class>
+ <widget class="QMainWindow" name="Primer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Primer trimming</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>8</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>4</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_filenameforward">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Forward File Path: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_loadforwardfile">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>301</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_filenamereverse">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Reverse File Path: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="pushButton_loadreversefile">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>8</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Browse...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>303</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_forward">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>Forward reads</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Forward Primer:      </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEdit_forward">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="placeholderText">
+          <string>Forward primer sequences</string>
+         </property>
+         <property name="cursorMoveStyle">
+          <enum>Qt::LogicalMoveStyle</enum>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_reverse">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>Reverse reads</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Reverse Primer:      </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEdit_reverse">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="placeholderText">
+          <string>Reverse primer sequences</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_min">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>minimum length: Discard processed reads that are shorter than LENGTH</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Min Length:            </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEdit_min">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="placeholderText">
+          <string>Min length</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_quality">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>Quality trimming: this parameter can be used to trim low-quality ends from reads</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Quality cutoff:         </string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_quality">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="placeholderText">
+          <string>Quality cutoff</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_max">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>maximum number of N bases: Discard reads containing more than COUNT N bases</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Max-n:                   </string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="lineEdit_max">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="placeholderText">
+          <string>Max_n</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_overlap">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>Minimum overlap. reducing random matches (default: 3)</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Overlap:                 </string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_overlap">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_errorRate">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>Maximum error rate (default: 0.1)</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Error rate:              </string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit_error">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>0.1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_discarduntrim">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Discard reads in which no adapter was found</string>
+         </property>
+         <property name="text">
+          <string>Discard untrimmed:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QRadioButton" name="radioButton_yes">
+         <property name="text">
+          <string>Yes</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QRadioButton" name="radioButton_no">
+         <property name="text">
+          <string>No</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_othercommand">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string>You can include additional parameters. For more details, refer to the Cutadapt documentation available at: https://cutadapt.readthedocs.io/en/stable/index.html</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Other commands:   </string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QTextEdit" name="textEdit_othercommand">
+         <property name="placeholderText">
+          <string>You can include additional parameters. For more details, refer to the Cutadapt documentation available at: https://cutadapt.readthedocs.io/en/stable/index.html</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="lineEdit_outputname">
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>Primer_trimmed_</string>
+         </property>
+         <property name="placeholderText">
+          <string>prefix output name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_errorRate_2">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="inputMethodHints">
+          <set>Qt::ImhPreferNumbers</set>
+         </property>
+         <property name="text">
+          <string>&lt;span style=&quot;color: black;&quot;&gt;Prefix output name: &lt;/span&gt;&lt;span style=&quot;color: red;&quot;&gt;*&lt;/span&gt;</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::RichText</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>7</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>7</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_reset">
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_run">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Run</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>464</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

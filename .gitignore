@@ -1,0 +1,26 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.env/
+
+# Application binaries
+apps/blast/blastn.exe
+apps/vsearch/bin/libbz2.dll
+apps/vsearch/bin/vsearch.exe
+apps/vsearch/bin/zlib1.dll
+
+# Database files
+MetaResultDB.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.iml
