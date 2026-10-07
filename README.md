@@ -7,12 +7,12 @@ A User Manual is also provided, which contains the same information presented in
 ---
 
 ##  Download and installation
-MetaBioDetect has been designed to be user-friendly and easily accessible across different operating systems, including macOS, Windows, and Linux. The platform can be downloaded by users from the GitHub repository: 
-[Download MetaBioDetect](https://github.com/ZahraKarimiBIX/MetaBioDetect/releases/download/MetaBioDetect/MetaBioDetect_21_09_2026.zip)
+MetaBioDetect has been designed to be user-friendly and easily accessible across different operating systems, including macOS, Windows, and Linux. The platform can be downloaded by users from the GitHub repository. 
 
 ###  1. Running MetaBioDetect on Windows
 For Windows users, MetaBioDetect is available as a compiled executable file, allowing the software to be run without requiring additional installation or configuration. Users can simply double-click the .exe file to launch the application.
-
+ [Download MetaBioDetect](https://github.com/ZahraKarimiBIX/MetaBioDetect/releases/download/MetaBioDetect/MetaBioDetect_21_09_2026.zip)
+ 
 ### 2. Running MetaBioDetect on Linux and macOS
 For Linux and macOS users, MetaBioDetect can be run directly from the source code. It is recommended to use a Python virtual environment to isolate the software and its dependencies from other Python installations on the system. Follow the steps below to set up and run MetaBioDetect.
 
@@ -35,7 +35,8 @@ Once activated, the name of the virtual environment, typically (.venv), will app
 ### Step 3: Install the required dependencies
 
 With the virtual environment activated, install all Python packages required by MetaBioDetect using the requirements.txt file:
-
+git clone https://github.com/ZahraKarimiBIX/MetaBioDetect.git 
+cd MetaBioDetect
 pip install -r requirements.txt
 
 This command automatically installs the required dependencies and their compatible versions specified in the requirements.txt file.
