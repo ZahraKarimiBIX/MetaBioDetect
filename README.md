@@ -35,8 +35,11 @@ Once activated, the name of the virtual environment, typically (.venv), will app
 ### Step 3: Install the required dependencies
 
 With the virtual environment activated, install all Python packages required by MetaBioDetect using the requirements.txt file:
+
 git clone https://github.com/ZahraKarimiBIX/MetaBioDetect.git 
+
 cd MetaBioDetect
+
 pip install -r requirements.txt
 
 This command automatically installs the required dependencies and their compatible versions specified in the requirements.txt file.
