@@ -8,7 +8,7 @@ A User Manual is also provided, which contains the same information presented in
 
 ##  Download and installation
 MetaBioDetect has been designed to be user-friendly and easily accessible across different operating systems, including macOS, Windows, and Linux. The platform can be downloaded by users from the GitHub repository: 
-[Download MetaBioDetect](https://github.com/ZahraKarimiBIX/MetaBioDetect/releases/tag/MetaBioDetect)
+[Download MetaBioDetect](https://github.com/ZahraKarimiBIX/MetaBioDetect/releases/download/MetaBioDetect/MetaBioDetect_21_09_2026.zip)
 
 ###  1. Running MetaBioDetect on Windows
 For Windows users, MetaBioDetect is available as a compiled executable file, allowing the software to be run without requiring additional installation or configuration. Users can simply double-click the .exe file to launch the application.
